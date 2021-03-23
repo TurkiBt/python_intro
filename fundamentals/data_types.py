@@ -38,3 +38,45 @@ print(type(2.63))		# output: <class 'float'>
 print(type(new_person))		# output: <class 'dict'>
 print(len(new_person))		# output: 4 (the number of key-value pairs)
 print(len('Coding Dojo'))	# output: 11
+
+#Loops
+for x in range(0, 10, 1):
+    print(x)
+
+my_list = ["abc", 123, "xyz"]
+for i in range(0, len(my_list)):
+    print(i, my_list[i])
+# output: 0 abc, 1 123, 2 xyz
+    
+# OR 
+    
+for v in my_list:
+    print(v)
+# output: abc, 123, xyz
+
+my_dict = { "name": "Noelle", "language": "Python" }
+for k in my_dict:
+    print(k)
+# output: name, language
+
+my_dict = { "name": "Noelle", "language": "Python" }
+for k in my_dict:
+    print(my_dict[k])
+# output: Noelle, Python
+
+# another way to iterate through the keys
+for key in my_dict.keys():
+     print(key)
+#to iterate through the values
+for val in my_dict.values():
+     print(val)
+#to iterate through both keys and values
+for key, val in my_dict.items():
+     print(key, " = ", val)
+
+y = 3
+while y > 0:
+    print(y)
+    y = y - 1
+else:
+    print("Final else statement")
